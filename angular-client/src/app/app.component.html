@@ -1,0 +1,31 @@
+<table id="customers">
+    <tr><th colspan="4">Filted Array within 100 Km</th></tr>
+    <tr>
+      <th>User ID</th>
+      <th>Name</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+    <tr *ngFor="let item of filterdArray;">
+      <td>{{item.user_id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.latitude}}</td>
+      <td>{{item.longitude}}</td>
+    </tr>   
+</table>
+
+<table id="customers">
+    <tr><th colspan="4">Original File Data</th></tr>
+    <tr>
+      <th>User ID</th>
+      <th>Name</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+    <tr *ngFor="let item of originalArray;">
+      <td>{{item.user_id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.latitude}}</td>
+      <td>{{item.longitude}}</td>
+    </tr>   
+</table>
